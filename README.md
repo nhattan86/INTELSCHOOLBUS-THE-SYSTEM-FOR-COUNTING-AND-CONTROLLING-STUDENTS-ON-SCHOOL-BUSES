@@ -15,7 +15,7 @@ The system has been ordered and deployed on buses within The Hong Ngoc – Ruby 
 ## Introduction
 This project aims to develop an integrated system for real-time student counting on school buses. The project begins by researching lightweight recognition, tracking, and counting models that are affordable  but operate effectively on low-cost devices, under $150. The system must be able to access data outside the LAN, ensuring seamless IoT connectivity for remote monitoring and data access. Additionally, the project will explore `GPS` systems and their integration with mapping APIs, enabling `tracking the bus's location` with an error margin of less than 5 meters and monitoring the number of students in real-time via a web interface with a database for storing information. The system also ensures the integration of power source and embedded hardware with `custom dataset trained lightweight AI model` allowing continuous operation across three school shifts: morning, noon, and afternoon, equating to `12 hours`; dimensions not exceeding 200x200x100 mm to easy installation on school buses. Throughout the product development process, the project will analyze and evaluate both `hardware and software` results in ensure optimal performance and reliability. 
 
-Finally, the project will produce report, presentation, and poster. The system's performance requirements are to achieve a frame rate above 10 FPS and an accuracy greater than 95%, with potential for further improvement. Table 1 shows the performance and hardware specifications of the Intelschoolbus – the system for counting and controlling students on school buses. 
+Finally, the project will produce [report](https://github.com/nhattan86/INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES/blob/main/42001078_LeNhatTan.pdf), [presentation](https://github.com/nhattan86/INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES/blob/main/42001078_LeNhatTan_slides_DATN.pdf), and [poster](https://github.com/nhattan86/INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES/blob/main/42001078_L%C3%AA%20Nh%E1%BA%ADt%20T%C3%A2n_poster.png). The system's performance requirements are to achieve a frame rate above 10 FPS and an accuracy greater than 95%, with potential for further improvement. Table 1 shows the performance and hardware specifications of the Intelschoolbus – the system for counting and controlling students on school buses. 
 
 *Table 1: The completed product*
 | Property                        | The completed product          | Required Specification                |
@@ -28,6 +28,42 @@ Finally, the project will produce report, presentation, and poster. The system's
 | Operating Time                  | 12 hours continuously         | Minimum 12 hours continuously          |
 | System Size                     | 115x90x55 mm                 | Smaller than 200x200x100 mm            |
 | Other Standards                 | Industrial-grade wired connection, dustproof, and water-resistant IPX22 | Industrial-grade wired connection, dustproof, and water-resistant IPX22 |
+
+Figure 1 provides a detailed description of the components in the system used in conjunction, it is a block with size 115x90x55 mm contains camera, module GPS and antenas, with LED indicator, IR LED and DC fan for drawing hot air from the inside out for cooling. The system, after careful consideration, has been selected for installation at the entrance of the bus, assuming the bus has only one door for passengers. Fig. 2 shows the system and its position. In that position, the camera captures a comprehensive view of passengers’ heads and a wide area of movement, enabling effective tracking and inference of the passengers’ movement direction.
+
+![Detailed system](images/system.jpg)
+
+*Figure 1: Detailed description of the components in the system*
+
+![deploy](images/deploy.png)
+
+*Figure 2: The system deployed on the bus*
+
+Figure 3 provides a comprehensive view of the product's exterior, highlighting two ventilation holes, while also offering a detailed depiction of the internal layout of the system. The internal components are securely arranged and fixed using PU Tape made from acrylic material and the latest Nano gel technology. This adhesive is safe, non-toxic, and provides strong bonding. 
+
+![exterior](images/comprehensive.png)
+
+*Figure 3: System appearance details*
+
+Additionally, Figure 4 and 5 showcases the precise design of the PCB layout (designed by [Proteus](https://github.com/nhattan86/INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES/blob/main/42001078_LeNhatTan_PCB.pdsprj) as Figure 6), ensuring a perfect fit with the camera's lens and maintaining an optimal distance between the headers.
+
+![pcb](images/PCB1.png)
+
+*Figure 4: System interior details*
+
+![pcb](images/PCB2.png)
+
+*Figure 5: PCB Circuit connected to camera*
+
+![pcb](images/PCB3.png)
+
+*Figure 6: PCB layout*
+
+When the transmitter side (system deployed on bus) operates, it will send data in the form of packaged JSON. On the receiving side, the web application running on Flask will receive this data and display it with the interface shown in Figure 7. The protocol used for transmitter is MQTT, sending to a public IP address of AWS, so all users outside the LAN network can view the data.
+
+![web](images/web_new.png)
+
+*Figure 7: Web application for monitoring*
 
 ## Acknowledgment
 First and foremost, I would like to extend my deepest gratitude to my undergraduate thesis advisor, Dr. Le Anh Vu. Throughout the process of completing my thesis, I encountered many questions and uncertainties, all of which were met with his patient and enthusiastic guidance. He not only clarified my doubts but also imparted valuable knowledge related to my research topic. I am sincerely thankful for the time and effort he dedicated to helping me understand complex concepts. His passionate mentorship and clear direction played a crucial role in enabling me to successfully complete this significant and meaningful thesis. It is a deeply humane and purposeful project, one I have always aspired to undertake, and I feel incredibly fortunate that he helped me seize this opportunity.  
