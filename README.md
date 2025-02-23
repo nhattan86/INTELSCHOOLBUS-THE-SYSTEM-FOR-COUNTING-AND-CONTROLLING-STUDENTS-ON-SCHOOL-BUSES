@@ -1,7 +1,7 @@
 # INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES
 
 ## Information
-This project was completed in 2024 (Intake K24, academic year 2020-2024) under the supervision of `Dr. Le Anh Vu`.
+This repository contains my graduation project, developed by `Le Nhat Tan` in 2024 as part of the requirements for his Bachelor of Engineering degree in `Electronics and Telecommunications Engineering at Ton Duc Thang University` (Intake K24, academic year 2020-2024). The project was supervised by `Dr. Le Anh Vu`. 
 
 Real-time passenger counting on buses is a crucial task for enhancing monitoring efficiency in transportation, education, and smart city development, aligning with the trends and goals of digital transformation. This project introduces a compact system featuring an AI-powered camera integrated with a GPS module to monitor and count passengers or students in real time on buses, addressing safety and operational concerns in public transportation.
 
