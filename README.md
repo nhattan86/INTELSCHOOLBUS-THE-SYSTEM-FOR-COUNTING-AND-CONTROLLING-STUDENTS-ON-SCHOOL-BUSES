@@ -3,15 +3,31 @@
 ## Information
 This repository contains my graduation project, developed by `Le Nhat Tan` in 2024 as part of the requirements for his Bachelor of Engineering degree in `Electronics and Telecommunications Engineering at Ton Duc Thang University HCMC, Vietnam` (Intake K24, academic year 2020-2024). The project was advised by `Dr. Le Anh Vu`. 
 
-## Introduction
-
 ## Abstract
-Real-time passenger counting on buses is a crucial task for enhancing monitoring efficiency in transportation, education, and smart city development, aligning with the trends and goals of digital transformation. This project introduces a compact system featuring an AI-powered camera integrated with a GPS module to monitor and count passengers or students in real time on buses, addressing safety and operational concerns in public transportation.
+Real-time passenger counting on buses is a crucial task for enhancing monitoring efficiency in transportation, education, and smart city development, aligning with the trends and goals of digital transformation. This project introduces a compact system featuring an AI-powered camera integrated with a GPS module to `monitor and count passengers or students in real time` on buses, addressing safety and operational concerns in public transportation.
 
 Compared to existing research utilizing various methods such as DeepSORT, Kalman Filters, and YOLO variants with hardware like Raspberry Pi and Arduino, this work advances the field by leveraging next-generation hardware based on RISC-V architecture. It incorporates a powerful integrated NPU with an optimized model for embedded systems, combined with essential components to ensure effective and stable operation in real-world conditions.
 
 Specifically, the system employs a YOLO model converted to a lighter format (cvimodel), utilizing a head detection model trained on 10,000 images in conjunction with ByteTrack tracking. The report also highlights limitations of existing solutions and the optimized features of the proposed system.
+
 The system has been ordered and deployed on buses within The Hong Ngoc – Ruby School Education System (part of the Tri Duc Education System). The results of this project were accepted at The 13th International Conference on Green and Human Information Technology (ICGHIT) is co-hosted by Green and Human Information Technology (GHIT), The Institute of Electronics and Information Engineers (IEIE). Additionally, this project advanced to the Competition Round of the "AI. STAR 2024" contest for innovative AI application projects in Ho Chi Minh City, organized by the Department of Science and Technology of Ho Chi Minh City, with SIHUB serving as the implementing unit.
+
+## Introduction
+This project aims to develop an integrated system for real-time student counting on school buses. The project begins by researching lightweight recognition, tracking, and counting models that are affordable  but operate effectively on low-cost devices, under $150. The system must be able to access data outside the LAN, ensuring seamless IoT connectivity for remote monitoring and data access. Additionally, the project will explore `GPS` systems and their integration with mapping APIs, enabling `tracking the bus's location` with an error margin of less than 5 meters and monitoring the number of students in real-time via a web interface with a database for storing information. The system also ensures the integration of power source and embedded hardware with `custom dataset trained lightweight AI model` allowing continuous operation across three school shifts: morning, noon, and afternoon, equating to `12 hours`; dimensions not exceeding 200x200x100 mm to easy installation on school buses. Throughout the product development process, the project will analyze and evaluate both `hardware and software` results in ensure optimal performance and reliability. 
+
+Finally, the project will produce report, presentation, and poster. The system's performance requirements are to achieve a frame rate above 10 FPS and an accuracy greater than 95%, with potential for further improvement. Table 1 shows the performance and hardware specifications of the Intelschoolbus – the system for counting and controlling students on school buses. 
+
+*Table 1: The completed product*
+| Property                        | The completed product          | Required Specification                |
+|---------------------------------|-------------------------------|---------------------------------------|
+| Accuracy                        | 96%                           | Over 95%                               |
+| FPS (Frames per Second)         | Over 10                       | Over 10                               |
+| Cost                            | $108                          | Below $150                             |
+| Weight                          | 150 grams                     | Below 200 grams                        |
+| Average operating temperature measured | Below 50°C                    | Below 80°C                             |
+| Operating Time                  | 12 hours continuously         | Minimum 12 hours continuously          |
+| System Size                     | 115x90x55 mm                 | Smaller than 200x200x100 mm            |
+| Other Standards                 | Industrial-grade wired connection, dustproof, and water-resistant IPX22 | Industrial-grade wired connection, dustproof, and water-resistant IPX22 |
 
 ## Acknowledgment
 First and foremost, I would like to extend my deepest gratitude to my undergraduate thesis advisor, Dr. Le Anh Vu. Throughout the process of completing my thesis, I encountered many questions and uncertainties, all of which were met with his patient and enthusiastic guidance. He not only clarified my doubts but also imparted valuable knowledge related to my research topic. I am sincerely thankful for the time and effort he dedicated to helping me understand complex concepts. His passionate mentorship and clear direction played a crucial role in enabling me to successfully complete this significant and meaningful thesis. It is a deeply humane and purposeful project, one I have always aspired to undertake, and I feel incredibly fortunate that he helped me seize this opportunity.  
