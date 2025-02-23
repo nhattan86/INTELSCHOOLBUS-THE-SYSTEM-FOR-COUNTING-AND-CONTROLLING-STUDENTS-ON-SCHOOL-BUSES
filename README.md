@@ -8,7 +8,7 @@ Real-time passenger counting on buses is a crucial task for enhancing monitoring
 
 Compared to existing research utilizing various methods such as DeepSORT, Kalman Filters, and YOLO variants with hardware like Raspberry Pi and Arduino, this work advances the field by leveraging next-generation hardware based on RISC-V architecture. It incorporates a powerful integrated NPU with an optimized model for embedded systems, combined with essential components to ensure effective and stable operation in real-world conditions.
 
-Specifically, the system employs a YOLO model converted to a lighter format (cvimodel), utilizing a head detection model trained on 10,000 images in conjunction with ByteTrack tracking. The report also highlights limitations of existing solutions and the optimized features of the proposed system.
+Specifically, the system employs a YOLO model converted to a lighter format (cvimodel), utilizing a head detection model trained on `10,000 images` in conjunction with ByteTrack tracking. The report also highlights limitations of existing solutions and the optimized features of the proposed system.
 
 The system has been ordered and deployed on buses within The Hong Ngoc – Ruby School Education System (part of the Tri Duc Education System). The results of this project were accepted at The 13th International Conference on Green and Human Information Technology (ICGHIT) is co-hosted by Green and Human Information Technology (GHIT), The Institute of Electronics and Information Engineers (IEIE). Additionally, this project advanced to the Competition Round of the "AI. STAR 2024" contest for innovative AI application projects in Ho Chi Minh City, organized by the Department of Science and Technology of Ho Chi Minh City, with SIHUB serving as the implementing unit.
 
@@ -29,7 +29,7 @@ Finally, the project will produce [report](https://github.com/nhattan86/INTELSCH
 | System Size                     | 115x90x55 mm                 | Smaller than 200x200x100 mm            |
 | Other Standards                 | Industrial-grade wired connection, dustproof, and water-resistant IPX22 | Industrial-grade wired connection, dustproof, and water-resistant IPX22 |
 
-Figure 1 provides a detailed description of the components in the system used in conjunction, it is a block with size 115x90x55 mm contains camera, module GPS and antenas, with LED indicator, IR LED and DC fan for drawing hot air from the inside out for cooling. The system, after careful consideration, has been selected for installation at the entrance of the bus, assuming the bus has only one door for passengers. Fig. 2 shows the system and its position. In that position, the camera captures a comprehensive view of passengers’ heads and a wide area of movement, enabling effective tracking and inference of the passengers’ movement direction.
+Figure 1 provides a detailed description of the components in the system used in conjunction, it is a block with size `115x90x55 mm` contains camera, module GPS and antenas, with LED indicator, IR LED and DC fan for drawing hot air from the inside out for cooling. The system, after careful consideration, has been selected for installation at the entrance of the bus, assuming the bus has only one door for passengers. Figure 2 shows the system and its position. In that position, the camera captures a comprehensive view of passengers’ heads and a wide area of movement, enabling effective tracking and inference of the passengers’ movement direction.
 
 ![Detailed system](images/system.jpg)
 
@@ -45,7 +45,7 @@ Figure 3 provides a comprehensive view of the product's exterior, highlighting t
 
 *Figure 3: System appearance details*
 
-Additionally, Figure 4 and 5 showcases the precise design of the PCB layout (designed by [Proteus](https://github.com/nhattan86/INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES/blob/main/42001078_LeNhatTan_PCB.pdsprj) as Figure 6), ensuring a perfect fit with the camera's lens and maintaining an optimal distance between the headers.
+Additionally, Figure 4 & 5 showcases the precise design of the PCB layout (designed by [Proteus](https://github.com/nhattan86/INTELSCHOOLBUS-THE-SYSTEM-FOR-COUNTING-AND-CONTROLLING-STUDENTS-ON-SCHOOL-BUSES/blob/main/42001078_LeNhatTan_PCB.pdsprj) as Figure 6), ensuring a perfect fit with the camera's lens and maintaining an optimal distance between the headers.
 
 ![pcb](images/PCB1.png)
 
